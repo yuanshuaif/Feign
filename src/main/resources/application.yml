@@ -1,0 +1,18 @@
+server:
+    port: 8085
+#    servlet:
+#          context-path: /api-feign
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://yuanshuai:dk@localhost:8082/eureka/
+spring:
+  application:
+    name:  service-feign
+feign:
+  httpclient:
+    enabled: true
+  hystrix:
+    enabled: true
+
+
